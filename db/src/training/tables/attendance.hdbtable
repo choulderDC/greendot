@@ -1,0 +1,8 @@
+COLUMN TABLE "greendot.db.training.tables::attendance"(
+	"email"  NVARCHAR(200) NOT NULL COMMENT 'Email Address',
+	"name"   NVARCHAR(200) Comment 'name',
+	"country" NVARCHAR(20)  comment 'country',
+	PRIMARY KEY (
+		"email"
+	)
+)

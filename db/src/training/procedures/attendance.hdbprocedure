@@ -1,0 +1,14 @@
+PROCEDURE "greendot.db.training.procedures::attendance"( IN IP_MAIL STRING, IN IP_NAME STRING, IN IP_COUNTRY STRING )
+   LANGUAGE SQLSCRIPT
+   SQL SECURITY INVOKER
+   AS
+   
+   
+BEGIN
+   /*************************************
+       Write your procedure logic 
+   *************************************/
+   
+     UPSERT "greendot.db.training.tables::attendance" VALUES (IP_MAIL,IP_NAME, IP_COUNTRY);   
+   
+END
