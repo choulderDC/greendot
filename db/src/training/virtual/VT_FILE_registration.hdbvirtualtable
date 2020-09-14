@@ -1,0 +1,1 @@
+VIRTUAL TABLE "greendot.db.training.virtual::VT_FILE_registration" AT "FileAdapter"."registration"

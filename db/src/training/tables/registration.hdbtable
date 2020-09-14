@@ -1,0 +1,33 @@
+COLUMN TABLE "greendot.db.training.tables::registration"(
+	"ScheduledClassStartDate"			DATE,
+	"ScheduledClassEndDate" 			DATE,
+	"ScheduledClassSessionTemplate" 	NVARCHAR(60),
+	"ScheduledClassStartTime"			TIME,
+	"ScheduledClassLocation"			NVARCHAR(60),
+	"ScheduledClassFacility"			 NVARCHAR(60),
+	"ClassDuration"						 NVARCHAR(20),
+	"CompletedCourses"  				 NVARCHAR(20),
+	"RegistrationDate"  				 DATE,
+	"RegistrationStatus"				 NVARCHAR(20),
+	"CompletionDate"    				NVARCHAR(20),
+	"CompletionStatus"      			NVARCHAR(20),
+	"PersonFirstName"					 NVARCHAR(60),
+	"PersonMiddleName"      			NVARCHAR(60),
+	"PersonLastName"        			NVARCHAR(60),
+	"PersonUsername"        			NVARCHAR(60),
+	"PersonE-mail"          			NVARCHAR(200),
+	"PersonGlobalFunction"  			NVARCHAR(60),
+	"PersonLocalFunction"   			 NVARCHAR(60),
+	"PersonSubFunction"     			 NVARCHAR(60),
+	"PersonServiceLine"     			 NVARCHAR(60),
+	"PersonCostCenterNumber"			NVARCHAR(60),
+	"PersonPersonnelNo"     			NVARCHAR(60),
+	"PersonJobTypeName"     			NVARCHAR(60),
+	"PersonJobTypeInternalDescription" NVARCHAR(60),
+	"PersonOrganisationName"			NVARCHAR(60),
+	"PersonDomain"          			NVARCHAR(60),
+	"PersonStatus"          			NVARCHAR(60),
+		PRIMARY KEY (
+	"PersonE-mail"
+	)
+)
