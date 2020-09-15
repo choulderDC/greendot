@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="greendot.db.training.calculation_views::BAttendance" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Base Attendance"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="greendot.db.training.synonyms::attendance_analysis">
+    <resourceUri>greendot.db.training.synonyms::attendance_analysis</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="greendot.db.training.synonyms::attendance_analysis">
+  <attributes>
+    <attribute id="ScheduledClassStartDate" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ScheduledClassStartDate"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="ScheduledClassStartDate"/>
+    </attribute>
+    <attribute id="ScheduledClassEndDate" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ScheduledClassEndDate"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="ScheduledClassEndDate"/>
+    </attribute>
+    <attribute id="ScheduledClassSessionTemplate" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ScheduledClassSessionTemplate"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="ScheduledClassSessionTemplate"/>
+    </attribute>
+    <attribute id="ScheduledClassStartTime" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ScheduledClassStartTime"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="ScheduledClassStartTime"/>
+    </attribute>
+    <attribute id="ScheduledClassLocation" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ScheduledClassLocation"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="ScheduledClassLocation"/>
+    </attribute>
+    <attribute id="ScheduledClassFacility" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ScheduledClassFacility"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="ScheduledClassFacility"/>
+    </attribute>
+    <attribute id="ClassDuration" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Class Duration"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="ClassDuration"/>
+    </attribute>
+    <attribute id="CompletedCourses" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CompletedCourses"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="CompletedCourses"/>
+    </attribute>
+    <attribute id="RegistrationDate" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RegistrationDate"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="RegistrationDate"/>
+    </attribute>
+    <attribute id="RegistrationStatus" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RegistrationStatus"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="RegistrationStatus"/>
+    </attribute>
+    <attribute id="CompletionDate" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CompletionDate"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="CompletionDate"/>
+    </attribute>
+    <attribute id="CompletionStatus" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CompletionStatus"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="CompletionStatus"/>
+    </attribute>
+    <attribute id="PersonFirstName" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonFirstName"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonFirstName"/>
+    </attribute>
+    <attribute id="PersonMiddleName" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonMiddleName"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonMiddleName"/>
+    </attribute>
+    <attribute id="PersonLastName" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonLastName"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonLastName"/>
+    </attribute>
+    <attribute id="PersonUsername" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonUsername"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonUsername"/>
+    </attribute>
+    <attribute id="PersonE-mail" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonE-mail"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonE-mail"/>
+    </attribute>
+    <attribute id="PersonGlobalFunction" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonGlobalFunction"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonGlobalFunction"/>
+    </attribute>
+    <attribute id="PersonLocalFunction" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonLocalFunction"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonLocalFunction"/>
+    </attribute>
+    <attribute id="PersonSubFunction" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonSubFunction"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonSubFunction"/>
+    </attribute>
+    <attribute id="PersonServiceLine" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonServiceLine"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonServiceLine"/>
+    </attribute>
+    <attribute id="PersonCostCenterNumber" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonCostCenterNumber"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonCostCenterNumber"/>
+    </attribute>
+    <attribute id="PersonPersonnelNo" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonPersonnelNo"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonPersonnelNo"/>
+    </attribute>
+    <attribute id="PersonJobTypeName" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonJobTypeName"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonJobTypeName"/>
+    </attribute>
+    <attribute id="PersonJobTypeInternalDescription" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonJobTypeInternalDescription"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonJobTypeInternalDescription"/>
+    </attribute>
+    <attribute id="PersonOrganisationName" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonOrganisationName"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonOrganisationName"/>
+    </attribute>
+    <attribute id="PersonDomain" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonDomain"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonDomain"/>
+    </attribute>
+    <attribute id="PersonStatus" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PersonStatus"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="PersonStatus"/>
+    </attribute>
+    <attribute id="email" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="email"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="email"/>
+    </attribute>
+    <attribute id="name" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="name"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="name"/>
+    </attribute>
+    <attribute id="country" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="country"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="country"/>
+    </attribute>
+    <attribute id="status" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="status"/>
+      <keyMapping columnObjectName="attendance_analysis" columnName="status"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes>
+    <calculatedAttribute id="CountryID" order="33" semanticType="empty" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country ID">
+        <comment text="first 2 digits of User name"/>
+      </descriptions>
+      <keyCalculation datatype="NVARCHAR" expressionLanguage="SQL" length="2">
+        <formula>IFNULL(LEFT(&quot;PersonUsername&quot;, 2), '')</formula>
+      </keyCalculation>
+      </calculatedAttribute>
+  </calculatedAttributes>
+  <baseMeasures/>
+  <calculatedMeasures>
+    <measure id="count" order="34" aggregationType="sum" measureType="simple" datatype="DOUBLE" expressionLanguage="SQL">
+      <descriptions defaultDescription="count"/>
+      <formula>1</formula>
+      </measure>
+  </calculatedMeasures>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

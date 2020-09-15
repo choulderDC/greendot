@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="greendot.db.training.calculation_views::DCountry" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Country"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="greendot.db.training.synonyms::country">
+    <resourceUri>greendot.db.training.synonyms::country</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="greendot.db.training.synonyms::country">
+  <attributes>
+    <attribute id="ID" order="1" descriptionColumnName="country" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country"/>
+      <keyMapping columnObjectName="country" columnName="ID"/>
+    </attribute>
+    <attribute id="country" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country"/>
+      <keyMapping columnObjectName="country" columnName="country"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

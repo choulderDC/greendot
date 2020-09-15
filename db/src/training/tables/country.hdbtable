@@ -1,0 +1,7 @@
+COLUMN TABLE "greendot.db.training.tables::country"(
+	"ID"  NVARCHAR(22) NOT NULL COMMENT 'Country ID',
+	"country" NVARCHAR(20)  comment 'country',
+	PRIMARY KEY (
+		"ID"
+	)
+)

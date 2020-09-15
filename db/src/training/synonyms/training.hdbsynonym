@@ -1,0 +1,12 @@
+{
+  "greendot.db.training.synonyms::attendance_analysis": {
+    "target": {
+      "object": "attendanceRESULT"
+    }
+  },
+  "greendot.db.training.synonyms::country": {
+    "target": {
+      "object": "greendot.db.training.tables::country"
+    }
+  }
+}
