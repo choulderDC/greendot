@@ -16,7 +16,7 @@
       <keyMapping columnObjectName="country" columnName="ID"/>
     </attribute>
     <attribute id="country" order="2" displayAttribute="false" attributeHierarchyActive="false">
-      <descriptions defaultDescription="Country"/>
+      <descriptions defaultDescription="Country Desc."/>
       <keyMapping columnObjectName="country" columnName="country"/>
     </attribute>
   </attributes>

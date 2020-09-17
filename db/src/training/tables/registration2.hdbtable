@@ -1,0 +1,15 @@
+COLUMN TABLE "greendot.db.training.tables::registration2"(
+"CourseTitle"				NVARCHAR(60),
+"ClassDeliveryName"			NVARCHAR(60),
+"RegistrationStatus"			NVARCHAR(60),
+"PersonFirstName"			NVARCHAR(60),
+"PersonLastName"			NVARCHAR(60),
+"PersonEmail"				NVARCHAR(200),
+"PersonLocalFunction"                   NVARCHAR(60),
+"PersonSubFunction"			NVARCHAR(60),
+"PersonJobTypeInternalDescription"      NVARCHAR(60),
+"PersonDomain"                          NVARCHAR(60),
+   PRIMARY KEY (
+	"PersonEmail"
+	)
+)

@@ -8,5 +8,10 @@
     "target": {
       "object": "greendot.db.training.tables::country"
     }
+  },
+  "greendot.db.training.synonyms::mysyn": {
+    "target": {
+      "object": "greendot.db.training.virtual::VT_FILE_registration"
+    }
   }
 }
